@@ -1,0 +1,9 @@
+@import '../../fonts/fonts.css';
+@import '../../variables.scss';
+
+.app {
+  min-height: 100vh;
+  background-color: $background-color-first;
+  font-family: "Inter", "Helvetica", "Arial", sans-serif;
+  font-size: $fsz-small;
+}

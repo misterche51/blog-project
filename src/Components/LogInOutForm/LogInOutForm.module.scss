@@ -1,0 +1,67 @@
+@import '../../variables.scss';
+
+.form {
+  width: 384px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $decorative-fill-color-first;
+  border-radius: 5px;
+  padding: 48px 32px;
+
+  &__title {
+    font-size: $fsz-xlarge;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:first-of-type) {
+      margin-top: 12px;
+    }
+  }
+
+  &__label {
+    font-weight: bold;
+    line-height: 1.6;
+  }
+
+  &__input {
+    border: 1px solid $decorative-line-color-fifth;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 2px;
+    &::placeholder{
+      color: $text-color-fourth;
+    }
+  }
+
+  &__submit {
+    margin-top: 12px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    background-color: $decorative-fill-color-third;
+    color: $text-color-third;
+    cursor: pointer;
+    &:disabled{
+      background-color: $decorative-fill-color-fifth;
+    }
+  }
+
+  &__info {
+    margin-top: 8px;
+    text-align: center;
+    color: $text-color-fourth;
+  }
+
+  &__errorMessage {
+    color: $text-color-fifth;
+  }
+}

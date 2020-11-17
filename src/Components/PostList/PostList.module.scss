@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.list {
+  width: 941px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.pagination {
+  text-align: center;
+  margin: 24px auto;
+}
